@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "kubernetes" {
-  load_config_file       = false
-  # config_path    = "~/.kube/config"
-  # config_context = "minikube"
+  
+  config_path    = "/home/ubuntu/.kube/config"
+  config_context = "minikube"
 }
 resource "kubernetes_deployment" "medicure" {
   metadata {
