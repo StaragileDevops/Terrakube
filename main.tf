@@ -8,8 +8,7 @@ terraform {
 }
 
 provider "kubernetes" {
-  export KUBECONFIG= "~/.kube/custom-config.conf"
-  
+   
   # config_path    = "~/.kube/config"
   # config_context = "minikube"
 }
